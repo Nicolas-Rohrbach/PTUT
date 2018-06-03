@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.layout.VBox?>
+<fx:root fx:id="grid" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.121"
+         type="javafx.scene.layout.GridPane" styleClass="root" prefWidth="1920" prefHeight="1080" gridLinesVisible="true">
+    <children>
+
+        <Rectangle fx:id="bandeau" width="1900" height="100"  GridPane.columnSpan="6"/>
+
+        <VBox fx:id="menu" GridPane.rowSpan="3" GridPane.rowIndex="1" alignment="CENTER">
+            <children>
+                <ImageView fx:id="logo" fitWidth="200" fitHeight="200" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                    <image>
+                        <Image url="https://zupimages.net/up/18/21/08z7.png" backgroundLoading="true" />
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
+
+
+
+
+        <Label fx:id="userid" text="User Id:" GridPane.rowIndex="10" GridPane.columnIndex="4"/>
+
+        <Label fx:id="titre" text="Seek'n'Play" GridPane.rowIndex="1" GridPane.columnIndex="5"/>
+
+        <TextField fx:id="txtfield" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    </children>
+</fx:root>
