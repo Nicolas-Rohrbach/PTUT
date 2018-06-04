@@ -1,9 +1,10 @@
 package sample;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Événement {
+public class Evenement {
     //Attributs
     private String nom;
     private Date date;
@@ -18,32 +19,39 @@ public class Événement {
     private final CanalGroupe maDiscussion;
 
     //Constructeur par default
-    public Événement(String nom, Date date, List<Profil> mesParticipants, List<Match> mesMatchs, CanalGroupe maDiscussion) {
+    public Evenement(String nom, Date date, List<Profil> mesParticipants) {
+
         this.nom = nom;
         this.date = date;
         this.mesParticipants = mesParticipants;
-        this.mesMatchs = mesMatchs;
-        this.maDiscussion = maDiscussion;
+        this.mesMatchs = new ArrayList<>();
+        this.maDiscussion = new CanalGroupe(nom,nom,mesParticipants);
+
     }
+
+    public void finalize(){}
 
     //Méthodes
- /*   public void ajouterEve() {
-        // TODO implement here
-    } */
     public void consulterEve() {
-        // TODO implement here
-    }
-    public void rejoindreEve(Profil membre) {
-        mesParticipants.add(membre);
-    }
-    public void quitterEve() {
-        // TODO implement here
-    }
-    public void modifierEve() {
-        // TODO implement here
+
+     //   return ;
+
     }
 
-    public void rechercherEvénement(BaseDeDonnées estExistant) {
+    public void rejoindreEve(Profil membre) {
+
+        this.mesParticipants.add(membre);
+
+    }
+
+    public void quitterEve(Profil membre) {
+
+        this.mesParticipants.remove(membre);
+
+    }
+
+    public void rechercherEvenement(BaseDeDonnees estExistant) {
+
         // TODO implement here
     }
 
@@ -56,9 +64,10 @@ public class Événement {
 
     public void setDate(Date date) { this.date = date; }
 
-    public List<Match> getTotalMatchIn1Événement(){ return mesMatchs; }
+    public List<Match> getTotalMatchs(){ return mesMatchs; }
 
     public List<Profil> getMesParticipants() { return mesParticipants; }
 
     public CanalGroupe getMaDiscussion() { return maDiscussion; }
+
 }

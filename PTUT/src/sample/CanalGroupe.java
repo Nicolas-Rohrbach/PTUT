@@ -13,7 +13,7 @@ public class CanalGroupe extends CanalDeDiscussion{
     private final Événement unÉvénement;
 
     //Constructeur par default
-    public CanalGroupe(String nomCanalEve, String nomCanal, Profil participantsEve[], Événement unÉvénement) {
+    public CanalGroupe(String nomCanalEve, String nomCanal, Profil participantsEve[], Evenement unEvenement) {
         super(nomCanal);
         this.nomCanalEve = nomCanalEve;
         this.participantsEve = participantsEve;
@@ -39,5 +39,5 @@ public class CanalGroupe extends CanalDeDiscussion{
         return participantsEve;
     }
 
-//    public Événement getUnÉvénement() { return unÉvénement; }
+//    public Evenement getUnEvenement() { return unEvenement; }
 }

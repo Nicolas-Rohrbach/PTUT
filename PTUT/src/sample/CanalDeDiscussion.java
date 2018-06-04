@@ -23,7 +23,7 @@ public class CanalDeDiscussion {
         // TODO implement here
     }
 
-   /* public void créerCanal() {
+   /* public void creerCanal() {
         // TODO implement here
     };*/
 

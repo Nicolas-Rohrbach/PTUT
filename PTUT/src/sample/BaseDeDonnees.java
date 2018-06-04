@@ -2,21 +2,21 @@ package sample;
 
 import java.util.List;
 
-public class BaseDeDonnées {
+public class BaseDeDonnees {
     //Attributs
     private List<Integer> listeDesScores;
     private boolean estAuthentifie;
     private boolean estExistant;
 
     //Constructeur par default
-    public BaseDeDonnées (List<Integer> listeDesScores, boolean estAuthentifie, boolean estExistant) {
+    public BaseDeDonnees (List<Integer> listeDesScores, boolean estAuthentifie, boolean estExistant) {
         this.listeDesScores = listeDesScores;
         this.estAuthentifie = estAuthentifie;
         this.estExistant = estExistant;
     }
 
     //Méthodes
-    public void stockerDonnéesInscription() {
+    public void stockerDonneesInscription() {
         // TODO implement here
     }
     public void enregistrerSuppressionCompte() {

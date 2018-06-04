@@ -2,7 +2,7 @@ package sample;
 
 import java.util.List;
 
-public class CanalPrivé extends CanalDeDiscussion{
+public class CanalPrive extends CanalDeDiscussion{
     //Attribut
     private String nomCanalUtilisateur;
 
@@ -10,7 +10,7 @@ public class CanalPrivé extends CanalDeDiscussion{
     private final List<Profil> monInterlocuteur; //Ils sont 2
 
     //Constructeur par default
-    public CanalPrivé(String nomCanalUtilisateur, String nomCanal, List<Profil> monInterlocuteur) {
+    public CanalPrive(String nomCanalUtilisateur, String nomCanal, List<Profil> monInterlocuteur) {
         super(nomCanal);
         this.nomCanalUtilisateur = nomCanalUtilisateur;
         this.monInterlocuteur = monInterlocuteur;

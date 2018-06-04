@@ -17,7 +17,7 @@ public class PageIdentification {
         return null;
     }
 
-    public void setAuthentification(BaseDeDonnées estAuthentifie){
+    public void setAuthentification(BaseDeDonnees estAuthentifie){
         // TODO implement here
     }
 
@@ -34,12 +34,12 @@ public class PageIdentification {
     }
 
     public void modifierMDP(String newmdp) {
-        motDePasse = newmdp;
+        this.motDePasse = newmdp;
     }
 
     //Getters et Setters
     public String getLogin() {
-        return login;
+        return this.login;
     }
 
     public void setLogin(String login) {
@@ -47,7 +47,7 @@ public class PageIdentification {
     }
 
     public String getMotDePasse() {
-        return motDePasse;
+        return this.motDePasse;
     }
 
     public void setMotDePasse(String motDePasse) {

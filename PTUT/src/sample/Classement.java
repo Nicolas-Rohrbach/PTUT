@@ -7,20 +7,20 @@ public class Classement {
     private int rangJoueur;
 
     //Reference association bidirectionelle avec Profil
-    private final List<Profil> mesJoueursClassés;
+    private final List<Profil> mesJoueursClasses;
 
     //Reference aggregation avec Résultat
-    private final List<Résultat> mesRésultats;
+    private final List<Resultat> mesResultats;
 
     //Constructeur par default
-    public Classement(int rangJoueur, List<Profil> mesJoueursClassés, List<Résultat> mesRésultats) {
+    public Classement(int rangJoueur, List<Profil> mesJoueursClasses, List<Resultat> mesResultats) {
         this.rangJoueur = rangJoueur;
-        this.mesJoueursClassés = mesJoueursClassés;
-        this.mesRésultats = mesRésultats;
+        this.mesJoueursClasses = mesJoueursClasses;
+        this.mesResultats = mesResultats;
     }
 
-    //Dépendance avec BaseDeDonnées
-    public void afficherClassement(List<BaseDeDonnées> listeDesScores) {
+    //Dependance avec BaseDeDonnees
+    public void afficherClassement(List<BaseDeDonnees> listeDesScores) {
         // TODO implement here
     }
 
@@ -41,11 +41,11 @@ public class Classement {
         this.rangJoueur = rangJoueur;
     }
 
-    public List<Résultat> getMesRésultats() {
-        return mesRésultats;
+    public List<Resultat> getMesResultats() {
+        return mesResultats;
     }
 
-    public List<Profil> getMesJoueursClassés() {
-        return mesJoueursClassés;
+    public List<Profil> getMesJoueursClasses() {
+        return mesJoueursClasses;
     }
 }
